@@ -226,7 +226,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Kabir Singh
+                Manoj Kumar
               </span>
             </h2>
 
@@ -235,8 +235,8 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga sunt consectetur rem obcaecati est. Corrupti, aut mollitia. Maxime vitae consectetur voluptatem voluptatibus in. Saepe sequi earum quis temporibus modi blanditiis illo delectus iusto doloremque unde.
-            </p>
+  I’m a Software Developer and Technical Lead with hands-on experience in building full-stack web applications using technologies like React, Angular, Node.js, .NET, and SQL Server. I’ve contributed to scalable enterprise solutions and led agile teams in startups and enterprises. With a strong foundation in DSA, system design, and Azure cloud, I’m passionate about solving real-world problems through clean, efficient code and innovative user experiences.
+  </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
