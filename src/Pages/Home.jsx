@@ -36,7 +36,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Frontend
+          FullStack
         </span>
       </span>
       <br />
@@ -94,12 +94,12 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const WORDS = ["Technical Lead at HCL", "Tech Enthusiast"];
+const TECH_STACK = ["Tailwind","React", "Angular", "Node.js", "DotNet","Java","Azure","DSA"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/ankitpathak62" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ankitpathak62/" },
-  { icon: Instagram, link: "https://www.instagram.com/sunfiresensei/" },
+  { icon: Github, link: "https://github.com/manojkumar0100" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/manoj-kumar-369269224/" },
+  { icon: Instagram, link: "https://www.instagram.com/_its__me__manoj_/" },
 ];
 
 const Home = () => {
@@ -211,8 +211,7 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Menciptakan Website Yang Inovatif, Fungsional, dan
-                  User-Friendly untuk Solusi Digital.
+                  Building innovative, functional, and user-friendly web solutions tailored for modern digital needs.
                 </p>
 
                 {/* Tech Stack */}
