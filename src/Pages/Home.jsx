@@ -95,7 +95,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Technical Lead at HCL", "Tech Enthusiast"];
-const TECH_STACK = ["Tailwind","React", "Angular", "Node.js", "DotNet","Java","Azure","DSA"];
+const TECH_STACK = ["Tailwind","React", "Angular", "Node.js", ".Net","Java","Azure","DSA"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/manojkumar0100" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/manoj-kumar-369269224/" },
