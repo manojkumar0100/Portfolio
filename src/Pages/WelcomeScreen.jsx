@@ -169,7 +169,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
               </motion.div>
 
               {/* Website Link */}
-              <motion.div
+              {/* <motion.div
                 className="text-center"
                 variants={childVariants}
                 data-aos="fade-up"
@@ -189,7 +189,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     </span>
                   </div>
                 </a>
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
         </motion.div>
