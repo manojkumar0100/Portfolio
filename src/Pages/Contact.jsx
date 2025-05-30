@@ -99,13 +99,7 @@ const ContactPage = () => {
             Contact Me
           </span>
         </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
-        >
-          Got a question? Send me a message, and I'll get back to you soon.
-        </p>
+
       </div>
 
       <div
@@ -130,14 +124,14 @@ const ContactPage = () => {
               <Share2 className="w-10 h-10 text-[#6366f1] opacity-50" />
             </div>
 
-            <form 
+            {/* <form 
               action="https://formsubmit.co/kabirsingh@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"
-            >
+            > */}
               {/* FormSubmit Configuration */}
-              <input type="hidden" name="_template" value="table" />
+              {/* <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
 
               <div
@@ -200,16 +194,16 @@ const ContactPage = () => {
                 <Send className="w-5 h-5" />
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
-            </form>
+            </form> */}
 
             <div className="mt-10 pt-6 border-t border-white/10 flex justify-center space-x-6">
               <SocialLinks />
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10">
+          {/* <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10">
             <Komentar />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
