@@ -61,7 +61,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-blue-200">{techStackCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Total Teknologi</div>
+          <div className="text-[10px] md:text-xs text-gray-400">Total Technologies</div>
         </div>
       </div>
 
@@ -71,7 +71,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-purple-200">{featuresCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Fitur Utama</div>
+          <div className="text-[10px] md:text-xs text-gray-400">Main Features</div>
         </div>
       </div>
     </div>
@@ -178,6 +178,7 @@ const ProjectDetails = () => {
 
               <div className="flex flex-wrap gap-3 md:gap-4">
                 {/* Action buttons */}
+              {project.Link && (
                 <a
                   href={project.Link}
                   target="_blank"
@@ -188,6 +189,7 @@ const ProjectDetails = () => {
                   <ExternalLink className="relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform" />
                   <span className="relative font-medium">Live Demo</span>
                 </a>
+              )}
 
                 <a
                   href={project.Github}

@@ -15,6 +15,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
 import { Code, Award, Boxes } from "lucide-react";
+import project4Img from "../assets/screenshots/project4.png";
+import project1Img from "../assets/screenshots/project1.png" // adjust path based on your folder depth
+
+
+import project2Img from "../assets/screenshots/project2.png" // adjust path based on your folder depth
+
+import project6Img from "../assets/screenshots/project6.png" // adjust path based on your folder depth
+
+//import project3Img from "../assets/screenshots/project3.png" // adjust path based on your folder depth
+
+import project5Img from "../assets/screenshots/project5.png" // adjust path based on your folder depth
 
 const ToggleButton = ({ onClick, isShowingMore }) => (
   <button
@@ -96,53 +107,141 @@ export default function FullWidthTabs() {
   const initialItems = isMobile ? 4 : 6;
 
   useEffect(() => {
-    AOS.init({ once: false });
-  }, []);
+  AOS.init({ once: false });
+  // Save projects to localStorage for detail page
+  localStorage.setItem("projects", JSON.stringify(hardcodedProjects));
+}, []);
 
-  const hardcodedProjects = [
-    {
-      id: 1,
-      Img: "../../assets/screenshots/project1.png",
-      Title: "Typing Master",
-      Description: "Real-time typing accuracy tool with multi-threading in C#.",
-      Link: "https://github.com/username/typing-master",
-    },
-    {
-      id: 2,
-      Img: "../../assets/screenshots/project2.png",
-      Title: "Portfolio Website",
-      Description: "React + Tailwind responsive portfolio hosted on Vercel.",
-      Link: "https://yourportfolio.vercel.app",
-    },
-    {
-      id: 3,
-      Img: "../../assets/screenshots/project3.png",
-      Title: "ToDo App",
-      Description: "Simple task manager built with React and localStorage.",
-      Link: "https://github.com/username/todo-app",
-    },
-    {
-      id: 4,
-      Img: "../../assets/screenshots/project4.png",
-      Title: "Blog Platform",
-      Description: "Markdown-based blog system using Node and Express.",
-      Link: "https://github.com/username/blog-platform",
-    },
-    {
-      id: 5,
-      Img: "../../assets/screenshots/project5.png",
-      Title: "Weather App",
-      Description: "Weather forecasting using OpenWeatherMap API.",
-      Link: "https://github.com/username/weather-app",
-    },
-    {
-      id: 6,
-      Img: "../../assets/screenshots/project6.png",
-      Title: "Quiz App",
-      Description: "Interactive quiz platform with real-time scoring.",
-      Link: "https://github.com/username/quiz-app",
-    },
-  ];
+  // ...existing code...
+const hardcodedProjects = [
+  {
+    id: 1,
+    Img: project1Img,
+    Title: "Smart Retail",
+    Description: "SmartRetail is a secure, scalable full-stack E-Commerce application built using Angular, .NET Web API. It features JWT-based authentication, role-based access control, and seamless Stripe-integrated checkout. The platform includes Firebase push notifications, real-time cart and wishlist synchronization, smart inventory dashboards, and a dynamic product reviews system. Users benefit from personalized product recommendations, order tracking, and PDF invoice generation, while admins can manage products efficiently through a dedicated panel. The application is fully responsive and optimized for both mobile and desktop experiences.",
+    Link: "https://smartretailapp.azurewebsites.net/",
+    TechStack: [
+  "Angular",
+  "TypeScript",
+  "Tailwind CSS",
+  "ASP.NET Web API",
+  "Entity Framework Core",
+  "MS SQL Server",
+  "JWT Authentication",
+  "Stripe",
+  "Firebase"
+],
+    Features: [
+      "Secure login with user/admin access control",
+      "Seamless and secure payment gateway integration",
+      "Firebase-powered notifications for orders & updates",
+      "Live cart, wishlist, and order tracking across sessions"
+    ],
+    Github: "https://github.com/manojkumar0100/SmartRetail-EcommerceApp--Angular-DotNet"
+  },
+  {
+    id: 2,
+    Img: project2Img,
+    Title: "Type Master",
+    Description: "Type Master is a lightweight Windows desktop typing test application developed using C# and multithreading. It delivers real-time speed and accuracy feedback with a distraction-free UI, enabling users to enhance typing skills through precise performance monitoring and detailed result summaries.",
+    //Link: "https://yourportfolio.vercel.app",
+    TechStack: [
+  "C#",
+  ".NET (WinForms/WPF)",
+  "System.Threading (Multithreading)",
+  "Windows Desktop"
+],
+    Features: [
+  "Real-time accuracy and WPM tracking",
+  "Smooth UI with multithreaded performance",
+  "Detailed typing result summary",
+  "Minimalist and distraction-free interface"
+],
+    Github: "https://github.com/manojkumar0100/TypeMaster-DotNet"
+  },
+  {
+    id: 3,
+    Img: "../../assets/screenshots/project3.png",
+    Title: "Tiny URL",
+    Description: "Tiny URL is a full-stack web application that allows users to shorten long URLs into compact, easily shareable links. Users can register and log in to manage their own collection of shortened URLs. The application provides the flexibility to either generate a random shortened URL using a hashing algorithm or allow users to define a custom alias. All URL data is securely stored in a MongoDB collection, enabling persistent access and management. This project uses server-side rendering with EJS and incorporates authentication, URL hashing, and responsive UI design for seamless usability across devices.",
+    TechStack: ["EJS", "Node js", "Javascript", "MongoDB", "Express", "HTML", "CSS"],
+    Features: [
+  "User login and authentication",
+  "Shorten URLs using hashing for unique keys",
+  "Create custom or default shortened URLs",
+  "Store and manage URLs in a database"
+],
+    Github: "https://github.com/manojkumar0100/Tiny-Url"
+  },
+  {
+    id: 4,
+    Img: project4Img, // Use the imported image variable
+    Title: "Club Sphere",
+    Description: "A centralized full-stack platform built with React and Node.js to streamline college club interactions, featuring role-based JWT authentication, Firebase-powered real-time push notifications, and dynamic content feeds. It enables students to follow clubs, like/comment/bookmark posts, and receive instant updates. Super Admins can assign Club Admins who manage posts, while users enjoy a personalized dashboard powered by intelligent content caching and REST APIs, boosting engagement and responsiveness.",
+    Link: "https://clubsphereapp.azurewebsites.net/",
+    TechStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Firebase", "Azure"],
+    Features: [
+  "Role-based JWT authentication and authorization",
+  "Real-time push notifications using Firebase",
+  "Interactive post management with likes, comments, and bookmarks",
+  "Personalized dashboards with dynamic content delivery"
+],
+    Github: "https://github.com/manojkumar0100/ClubSphere-React-NodeJS"
+  },
+  {
+    id: 5,
+    Img: project5Img,
+    Title: "Portfolio",
+    Description: "Portfolio V5 is a modern and visually appealing personal portfolio website built to showcase skills, projects, and contact information. It leverages ReactJS for a dynamic frontend and Tailwind CSS for responsive, clean styling. Animations and interactive UI elements are powered by AOS and Framer Motion, creating a smooth user experience. Firebase is used for backend services, and Material UI along with Lucide icons enhance the design. This project is easy to run locally and ready for production deployment.",
+    Link: "https://github.com/username/weather-app",
+    TechStack: [
+  "ReactJS",
+  "Tailwind CSS",
+  "AOS",
+  "Firebase",
+  "Framer Motion",
+  "Lucide",
+  "Material UI",
+  "SweetAlert2"
+]
+,
+    Features: [
+  "Responsive and modern design with Tailwind CSS",
+  "Smooth scroll animations using AOS and Framer Motion",
+  "Interactive UI components with Material UI and Lucide icons",
+  "Firebase integration for backend services",
+  "Easy setup and deployment with npm scripts",
+  "SweetAlert2 for beautiful alert messages"
+]
+,
+    Github: "https://github.com/manojkumar0100/Portfolio"
+  },
+  {
+    id: 6,
+    Img: project6Img,
+    Title: "RedStore",
+    Description: "RedStore is an online shopping web app where users can browse products, add to cart, and place orders. It supports user registration, login, and order history tracking. Users can filter and search products by category, brand, or price. Admins can manage products and update order statuses via a dedicated panel. The app uses Ajax for smooth, dynamic interactions and sends email notifications for orders and registration. Built with Node.js, EJS, MySQL, and deployed on Heroku with AWS RDS.",
+    //Link: "https://github.com/username/quiz-app",
+    TechStack: [
+  "Node.js",
+  "Express",
+  "EJS",
+  "Bootstrap",
+  "JavaScript",
+  "jQuery",
+  "Ajax",
+  "MySQL",
+],
+    Features: [
+  "User registration, login, and order history tracking",
+  "Product filtering and search by category, brand, and price",
+  "Shopping cart with checkout, invoice generation, and order tracking",
+  "Admin panel for managing products and order statuses"
+],
+    Github: "https://github.com/manojkumar0100/RedStore-Ecommerce"
+  },
+];
+// ...existing code...
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -158,7 +257,7 @@ export default function FullWidthTabs() {
     
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
       <div className="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
-        <img src="../../assets/screenshots/project2.png" />
+        
         <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
           <span style={{
             color: '#6366f1',
