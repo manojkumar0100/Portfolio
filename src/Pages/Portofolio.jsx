@@ -85,9 +85,19 @@ function a11yProps(index) {
 }
 
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
-  
+  { icon: "c.svg", language: "C++" },
+  { icon: "java.svg", language: "Java" },
+  { icon: "tailwind.svg", language: "Tailwind" },
+  { icon: "typescript.svg", language: "TypeScript" },
+  { icon: "react.svg", language: "React" },
+  { icon: "angular.svg", language: "Angular" },
+  { icon: "nodejs.svg", language: "Node.js" },
+  { icon: "dotnet.svg", language: ".NET" },
+  { icon: "sqlserver.svg", language: "SQL Server" },
+  { icon: "firebase.svg", language: "Firebase" },
+  { icon: "git.svg", language: "Git" },
+  { icon: "azure.svg", language: "Azure" },
+
 ];
 
 export default function FullWidthTabs() {
@@ -307,9 +317,10 @@ const hardcodedProjects = [
             )}
           </TabPanel>
 
-          {/* */}
-
-          <TabPanel value={value} index={2} dir={theme.direction}>
+          {/* Tech Stack */}
+          
+          <TabPanel value={value} index={1} dir={theme.direction}>
+            
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
                 {techStacks.map((stack, index) => (
@@ -318,6 +329,7 @@ const hardcodedProjects = [
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
                     data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                   >
+                    <div>1</div>
                     <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} />
                   </div>
                 ))}

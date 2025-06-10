@@ -77,7 +77,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-[5%] md:px-0 bg-transparent">
+    <div id="Contact" className="min-h-screen flex items-center justify-center px-[5%] md:px-0 bg-transparent">
       <div className="w-full max-w-xl">
         <div className="text-center mb-8">
           <h2
