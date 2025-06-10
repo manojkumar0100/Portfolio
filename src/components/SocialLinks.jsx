@@ -13,7 +13,7 @@ const socialLinks = [
     displayName: "Let's Connect",
     subText: "on LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/manoj-kumar-369269224/",
     color: "#0A66C2",
     gradient: "from-[#0A66C2] to-[#0077B5]",
     isPrimary: true
@@ -21,9 +21,9 @@ const socialLinks = [
   {
     name: "Instagram",
     displayName: "Instagram",
-    subText: "@ekizr_",
+    subText: "@its__me__manoj",
     icon: Instagram,
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/_its__me__manoj_/",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]"
   },
@@ -39,9 +39,9 @@ const socialLinks = [
   {
     name: "GitHub",
     displayName: "Github",
-    subText: "@EkiZR",
+    subText: "@manojkumar0100",
     icon: Github,
-    // url: "",
+     url: "https://github.com/manojkumar0100",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]"
   },
@@ -141,8 +141,8 @@ const SocialLinks = () => {
 
 
         {/* Second Row - Instagram & YouTube */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[instagram, youtube].map((link) => (
+        <div>
+          {[instagram].map((link) => (
             <a
               key={link.name}
               href={link.url}
@@ -190,8 +190,8 @@ const SocialLinks = () => {
         </div>
 
         {/* Third Row - GitHub & TikTok */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[github, tiktok].map((link) => (
+        <div>
+          {[github].map((link) => (
             <a
               key={link.name}
               href={link.url}

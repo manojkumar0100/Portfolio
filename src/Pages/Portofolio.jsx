@@ -23,7 +23,7 @@ import project2Img from "../assets/screenshots/project2.png" // adjust path base
 
 import project6Img from "../assets/screenshots/project6.png" // adjust path based on your folder depth
 
-//import project3Img from "../assets/screenshots/project3.png" // adjust path based on your folder depth
+import project3Img from "../assets/screenshots/project3.png" // adjust path based on your folder depth
 
 import project5Img from "../assets/screenshots/project5.png" // adjust path based on your folder depth
 
@@ -87,16 +87,7 @@ function a11yProps(index) {
 const techStacks = [
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  
 ];
 
 export default function FullWidthTabs() {
@@ -160,18 +151,28 @@ const hardcodedProjects = [
     Github: "https://github.com/manojkumar0100/TypeMaster-DotNet"
   },
   {
-    id: 3,
-    Img: "../../assets/screenshots/project3.png",
-    Title: "Tiny URL",
-    Description: "Tiny URL is a full-stack web application that allows users to shorten long URLs into compact, easily shareable links. Users can register and log in to manage their own collection of shortened URLs. The application provides the flexibility to either generate a random shortened URL using a hashing algorithm or allow users to define a custom alias. All URL data is securely stored in a MongoDB collection, enabling persistent access and management. This project uses server-side rendering with EJS and incorporates authentication, URL hashing, and responsive UI design for seamless usability across devices.",
-    TechStack: ["EJS", "Node js", "Javascript", "MongoDB", "Express", "HTML", "CSS"],
-    Features: [
-  "User login and authentication",
-  "Shorten URLs using hashing for unique keys",
-  "Create custom or default shortened URLs",
-  "Store and manage URLs in a database"
+    id: 6,
+    Img: project6Img,
+    Title: "RedStore",
+    Description: "RedStore is an online shopping web app where users can browse products, add to cart, and place orders. It supports user registration, login, and order history tracking. Users can filter and search products by category, brand, or price. Admins can manage products and update order statuses via a dedicated panel. The app uses Ajax for smooth, dynamic interactions and sends email notifications for orders and registration. Built with Node.js, EJS, MySQL, and deployed on Heroku with AWS RDS.",
+    //Link: "https://github.com/username/quiz-app",
+    TechStack: [
+  "Node.js",
+  "Express",
+  "EJS",
+  "Bootstrap",
+  "JavaScript",
+  "jQuery",
+  "Ajax",
+  "MySQL",
 ],
-    Github: "https://github.com/manojkumar0100/Tiny-Url"
+    Features: [
+  "User registration, login, and order history tracking",
+  "Product filtering and search by category, brand, and price",
+  "Shopping cart with checkout, invoice generation, and order tracking",
+  "Admin panel for managing products and order statuses"
+],
+    Github: "https://github.com/manojkumar0100/RedStore-Ecommerce"
   },
   {
     id: 4,
@@ -216,29 +217,20 @@ const hardcodedProjects = [
 ,
     Github: "https://github.com/manojkumar0100/Portfolio"
   },
+  
   {
-    id: 6,
-    Img: project6Img,
-    Title: "RedStore",
-    Description: "RedStore is an online shopping web app where users can browse products, add to cart, and place orders. It supports user registration, login, and order history tracking. Users can filter and search products by category, brand, or price. Admins can manage products and update order statuses via a dedicated panel. The app uses Ajax for smooth, dynamic interactions and sends email notifications for orders and registration. Built with Node.js, EJS, MySQL, and deployed on Heroku with AWS RDS.",
-    //Link: "https://github.com/username/quiz-app",
-    TechStack: [
-  "Node.js",
-  "Express",
-  "EJS",
-  "Bootstrap",
-  "JavaScript",
-  "jQuery",
-  "Ajax",
-  "MySQL",
-],
+    id: 3,
+    Img: project3Img,
+    Title: "Tiny URL",
+    Description: "Tiny URL is a full-stack web application that allows users to shorten long URLs into compact, easily shareable links. Users can register and log in to manage their own collection of shortened URLs. The application provides the flexibility to either generate a random shortened URL using a hashing algorithm or allow users to define a custom alias. All URL data is securely stored in a MongoDB collection, enabling persistent access and management. This project uses server-side rendering with EJS and incorporates authentication, URL hashing, and responsive UI design for seamless usability across devices.",
+    TechStack: ["EJS", "Node js", "Javascript", "MongoDB", "Express", "HTML", "CSS"],
     Features: [
-  "User registration, login, and order history tracking",
-  "Product filtering and search by category, brand, and price",
-  "Shopping cart with checkout, invoice generation, and order tracking",
-  "Admin panel for managing products and order statuses"
+  "User login and authentication",
+  "Shorten URLs using hashing for unique keys",
+  "Create custom or default shortened URLs",
+  "Store and manage URLs in a database"
 ],
-    Github: "https://github.com/manojkumar0100/RedStore-Ecommerce"
+    Github: "https://github.com/manojkumar0100/Tiny-Url"
   },
 ];
 // ...existing code...
@@ -279,7 +271,7 @@ const hardcodedProjects = [
         <AppBar position="static" elevation={0} sx={{ bgcolor: "transparent", border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "20px", position: "relative", overflow: "hidden", "&::before": { content: '""', position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.03) 100%)", backdropFilter: "blur(10px)", zIndex: 0 } }} className="md:px-4">
           <Tabs value={value} onChange={handleChange} textColor="secondary" indicatorColor="secondary" variant="fullWidth" sx={{ minHeight: "70px", "& .MuiTab-root": { fontSize: { xs: "0.9rem", md: "1rem" }, fontWeight: "600", color: "#94a3b8", textTransform: "none", transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)", padding: "20px 0", zIndex: 1, margin: "8px", borderRadius: "12px", "&:hover": { color: "#ffffff", backgroundColor: "rgba(139, 92, 246, 0.1)", transform: "translateY(-2px)", "& .lucide": { transform: "scale(1.1) rotate(5deg)" } }, "&.Mui-selected": { color: "#fff", background: "linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2))", boxShadow: "0 4px 15px -3px rgba(139, 92, 246, 0.2)", "& .lucide": { color: "#a78bfa" } } }, "& .MuiTabs-indicator": { height: 0 }, "& .MuiTabs-flexContainer": { gap: "8px" } }}>
             <Tab icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />} label="Projects" {...a11yProps(0)} />
-            <Tab icon={<Award className="mb-2 w-5 h-5 transition-all duration-300" />} label="Certificates" {...a11yProps(1)} />
+            {/* <Tab icon={<Award className="mb-2 w-5 h-5 transition-all duration-300" />} label="Certificates" {...a11yProps(1)} /> */}
             <Tab icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />} label="Tech Stack" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
@@ -315,14 +307,7 @@ const hardcodedProjects = [
             )}
           </TabPanel>
 
-          <TabPanel value={value} index={1} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
-                {/* Placeholder Certificate Component */}
-                <Certificate ImgSertif="certificate1.png" />
-              </div>
-            </div>
-          </TabPanel>
+          {/* */}
 
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
