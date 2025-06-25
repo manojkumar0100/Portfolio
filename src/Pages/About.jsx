@@ -240,7 +240,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://drive.google.com/file/d/1SyMtl41kcgGZ-o2JtkaqLjBJt7WaYl-S/view?usp=sharing"
+                href="https://drive.google.com/file/d/1tlRrHcCv5p333DvIIqwsb0-bxMyQcN0b/view?usp=drive_link"
                 className="w-full lg:w-auto"
                 download
                 target="_blank"
